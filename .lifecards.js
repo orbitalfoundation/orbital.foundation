@@ -1,28 +1,42 @@
 // banner ⚪ Orbital Docs
 
-let one = {
-	content:
-`
-<div style="display:flex">
-
-	<div>
-		<h1>Orbital is an open source platform for distributed computation</h1>
-		<br/>
-		Create interactive digital twins, simulations, games, AR experiences, and open metaverses.
-		<br/>
-		<button>Get Started</button>
-		<button>Learn More></button>
-	</div>
-
-	<div>
-		<img style="width:200px;" src="/assets/25.png"></img>
-		<img style="width:200px;" src="/assets/15flipped.png"></img>
-	</div>
-
-</div>
-`
-	,
+let one_a = {
+	children: [
+		{
+			kind:"h1",
+			content:"Orbital is an open source platform for distributed computation"
+		},
+		{
+			content:"Create interactive digital twins, simulations, games, AR experiences, and open metaverses."
+		},
+		{
+			kind:"button",
+			content:"Get Started"
+		},
+		{
+			kind:"button",
+			content:"Learn More"
+		},
+	],
 }
+
+let one_b = {
+	content:
+	`
+	<div style="position:relative; padding:32px">
+	<img style="position:absolute;top:0;width:180%;" src="/assets/25.png"></img>
+	<img style="position:abosolute;top:0;width:180%;" src="/assets/15flipped.png"></img>
+	</div>
+	`
+}
+
+let one = {
+	kind:"callout",
+	children: [ one_a, one_b ]
+}
+
+
+//////////////// ignore
 
 let two = {
 	content:
@@ -159,7 +173,7 @@ let seven = {
 
 let site = {
 	uuid: '/',
-	children: [ one, two, three, four, five, six,seven ]
+	children: [ one ] // , two, three, four, five, six,seven ]
 }
 
 let data = [
