@@ -1,40 +1,82 @@
 // banner ⚪ Orbital Docs
 
-let one_a = {
-	children: [
-		{
-			kind:"h1",
-			content:"Orbital is an open source platform for distributed computation"
-		},
-		{
-			content:"Create interactive digital twins, simulations, games, AR experiences, and open metaverses."
-		},
-		{
-			kind:"button",
-			content:"Get Started"
-		},
-		{
-			kind:"button",
-			content:"Learn More"
-		},
-	],
-}
-
-let one_b = {
-	content:
-	`
-	<div style="position:relative; padding:32px">
-	<img style="position:absolute;top:0;width:180%;" src="/assets/25.png"></img>
-	<img style="position:abosolute;top:0;width:180%;" src="/assets/15flipped.png"></img>
-	</div>
-	`
-}
-
 let one = {
-	kind:"callout",
-	children: [ one_a, one_b ]
+content:
+`
+<style>
+.callout {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	flex-direction: row-reverse;
+	max-width: 70%;
+	font-family: 'Poppins', sans-serif;
+}
+.callout div {
+	flex: 1 1 0;
+}
+.callout div:first-child {
+	flex: 1 1 0;
+	display: flex;
+	justify-content: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url(/assets/15flipped.png);
 }
 
+button {
+	font-family: 'Poppins', sans-serif;
+	font-size: 0.95em;
+	border-radius: 52px;
+	padding: 10px 30px 10px 30px;
+	margin-right: 10px;
+	font-size:  20px;
+	font-weight:  300;
+	background: transparent;
+	color: var(--lifecards-night-text);
+	border: 2px solid var(--lifecards-night-text);
+}
+
+button:hover {
+	color: var(--lifecards-day-text);
+	background-color: var(--lifecards-night-text);
+	transition: 0.3s;
+}
+
+@media only screen and (max-width: 800px) {
+	.callout {
+		flex-direction: column;
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	button {
+		color: var(--lifecards-day-text);
+		border: 2px solid var(--lifecards-day-text);
+	}
+	button:hover {
+		color: var(--lifecards-night-text);
+		background-color: var(--lifecards-day-text);
+		transition: 0.3s;
+	}
+}
+
+
+</style>
+<div class="callout">
+<div>
+	<img style="width:100%; object-fit: contain;" src="/assets/25.png"></img>
+</div>
+<div>
+	<h1>Orbital is an open source platform for distributed computation</h1>
+	<p>Create interactive digital twins, simulations, games, AR experiences, and open metaverses.</p>
+	<button>Get<br/>Started</button>
+	<button>Learn<br/>More</button>
+</div>
+</div>
+`
+}
 
 //////////////// ignore
 
