@@ -194,7 +194,7 @@ let three = {
 content:
 `
 <centerer>
-<h1>Orbital – A blue-sky reinterpretation of the personal computing</h1>
+<h1>Orbital – A blue-sky reinterpretation of personal computing</h1>
 <div style="border:2px solid grey; width: 100%"></div>
 <br/>
 <h2>Personal Agency</h2>
