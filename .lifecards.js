@@ -115,7 +115,7 @@ content:
 
 <callout class="forceabove">
 	<div>
-		<h1>Orbital is an open source platform for distributed computation</h1>
+		<h1>Orbital is an open source platform for intelligent agents</h1>
 		<p>Create interactive digital twins, simulations, games, AR experiences, and open metaverses.</p>
 		<button>Get<br/>Started</button>
 		<button>Learn<br/>More</button>
@@ -220,6 +220,7 @@ content:
 
 	<div>
 		<h2>Links</h2>
+		<a href="https://blog.orbital.foundation">Blog</a><br/>
 		<a href="https://docs.orbital.foundation">Docs</a><br/>
 		<a href="https://ecosystem.orbital.foundation">Ecosystem</a><br/>
 		<a href="https://github.com/orbitalfoundation">Github</a><br/>
@@ -228,6 +229,7 @@ content:
 	<div>
 		<h2>Other Resources</h2>
 		<a href="https://wiki.orbital.foundation">Development Wiki</a><br/>
+		<a href="https://twitter.com/orbitalfdn">@orbitalfdn on Twitter</a><br/>
 		<!--
 		<a href="https://orbital.foundation/apache-license">Apache Open Source License</a><br/>
 		<a href="https://orbital.foundation/code-of-conduct">Code of Conduct</a><br/>
